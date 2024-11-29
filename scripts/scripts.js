@@ -15,8 +15,8 @@ let duration = 1;
 
 
 // wraps EVERYTHING inside to wait untill the html loads because there is a duplicate of src="scripts/script.js"  at the start and end???
-document.addEventListener("DOMContentLoaded", () => {
-/****************** helper function ******************/
+document.addEventListener("DOMContentLoaded", function() {
+    /****************** helper function ******************/
 /* create a function called recalculate() which will
     - create a variable to represent the calculated-cost span element. That will look something like:
         // let costLabel = document.getElementById("calculated-cost");
